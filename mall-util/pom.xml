@@ -15,10 +15,10 @@
         <module>mall-common</module>
         <module>mall-service-dependency</module>
     </modules>
+    <description>
+        存放所有公共工程
+    </description>
 
-    <properties>
-        <maven.compiler.source>8</maven.compiler.source>
-        <maven.compiler.target>8</maven.compiler.target>
-    </properties>
+
 
 </project>

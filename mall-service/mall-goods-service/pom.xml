@@ -3,30 +3,28 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>gupaoedu-vip-mall</artifactId>
+        <artifactId>mall-service</artifactId>
         <groupId>com.gupaoedu.vip.mall</groupId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <modules>
-        <module>mall-goods-service</module>
-    </modules>
 
-    <artifactId>mall-service</artifactId>
-    <description>所有的应用服务</description>
-    <packaging>pom</packaging>
+    <artifactId>mall-goods-service</artifactId>
+
+    <properties>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+    </properties>
 
     <dependencies>
-        <!--依赖mall-service-dependency-->
         <dependency>
-            <groupId>com.gupaoedu.vip.mall</groupId>
-            <artifactId>mall-service-dependency</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-        <!--依赖mall-common-->
+        <!--goods-api依赖-->
         <dependency>
             <groupId>com.gupaoedu.vip.mall</groupId>
-            <artifactId>mall-common</artifactId>
+            <artifactId>goods-api</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
     </dependencies>
